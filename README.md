@@ -10,7 +10,9 @@ At first, I masked the PII with sha256 hashing, but this makes the PII irretriev
 
 1. install python 3
 2. Make sure both the given docker containers are running
-3. Run by executing “python3 fetch.py”
+3. Run the command "pip install flatten_json"
+4. Run the command "pip install psycopg2-binary"
+5. Run by executing “python3 fetch.py”
 
 
 **How would you deploy this application in production?** 
