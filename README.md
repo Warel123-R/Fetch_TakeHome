@@ -17,7 +17,7 @@ At first, I masked the PII with sha256 hashing, but this makes the PII irretriev
 You would deploy this application as AWS lambda and leverage other AWS services like AWS SQS and mysql.
 
 **How can this application scale with a growing dataset?**
-The application runs in about O(N*M) time, where N is the number of fields in the body of the message and M is the number of fields in the message itself. This would run into issues if N*M exceeded 10^6, as this would likely take more than five seconds to run and would be highly intensive. One way to help this application scale is automatically filtering out the duplicate values immediately so they don’t have to be removed later on. Another way is implementing multithreading where you read 1,000 messages at a time and load them using different threads so they can be run in parallel.
+The application runs in about O(NxM) time, where N is the number of fields in the body of the message and M is the number of fields in the message itself. This would run into issues if NxM exceeded 10^6, as this would likely take more than five seconds to run and would be highly intensive. One way to help this application scale is automatically filtering out the duplicate values immediately so they don’t have to be removed later on. Another way is implementing multithreading where you read 1,000 messages at a time and load them using different threads so they can be run in parallel.
 
 **How can PII be recovered later on?** 
 Since the PII is base-64 encoded, the PII can be recovered later on through base 64 decoding, which is also an available python function.
