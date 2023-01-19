@@ -9,7 +9,7 @@ At first, I masked the PII with sha256 hashing, but this makes the PII irretriev
 **Steps for executing the program:**
 
 1. install python 3
-2. sure both the given docker containers are running
+2. Make sure both the given docker containers are running
 3. Run by executing “python3 fetch.py”
 
 
