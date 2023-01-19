@@ -6,6 +6,13 @@ Comments are written throughout the code and explain the script in greater detai
 
 At first, I masked the PII with sha256 hashing, but this makes the PII irretrievable again once it is hashed. The code for the sha256 hashing is still in the program, and one can use this far more secure hashing while storing the PII in another private database for even more security of the PII.
 
+**Steps for executing the program:**
+
+1. install python 3
+2. sure both the given docker containers are running
+3. Run by executing “python3 fetch.py”
+
+
 **How would you deploy this application in production?** 
 You would deploy this application as AWS lambda and leverage other AWS services like AWS SQS and mysql.
 
