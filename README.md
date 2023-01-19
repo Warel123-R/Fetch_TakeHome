@@ -10,7 +10,7 @@ At first, I masked the PII with sha256 hashing, but this makes the PII irretriev
 
 1. install python 3: [install](https://www.python.org/downloads/)
 2. install pip as per this [documentation](https://pip.pypa.io/en/stable/installation/#get-pip-py)
-3. Make sure both the given docker containers are running
+3. Make sure both the given docker containers are running and awslocal is installed
 4. Run the command "pip install flatten_json"
 5. Run the command "pip install psycopg2-binary"
 6. Run by executing “python3 fetch.py”
